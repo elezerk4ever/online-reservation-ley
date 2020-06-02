@@ -1,0 +1,134 @@
+body,html{
+    background: #ddd;
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    box-sizing: border-box;
+}
+header nav {background: -moz-linear-gradient(194deg, #498038 41%, #F6F6F6 100%);/* FF3.6+ */
+    background: -webkit-gradient(linear, 194deg, color-stop(41%, 498038), color-stop(100%, F6F6F6));/* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(194deg, #498038 41%, #F6F6F6 100%);/* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(194deg, #498038 41%, #F6F6F6 100%);/* Opera 11.10+ */
+    background: -ms-linear-gradient(194deg, #498038 41%, #F6F6F6 100%);/* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); /* for IE */
+    background: linear-gradient(194deg, #498038 41%, #F6F6F6 100%);/* W3C */
+    padding: 1px;
+}
+header nav ul {
+    padding: 0px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav ul li {
+    margin-right: 10px;
+    text-align: center;
+    padding: 0.5em;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.active {
+    background: rgb(62, 107, 62);
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+main{
+    margin-top: 1em;
+}
+main #res_form{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=9, Color=#000000)";/*IE 8*/
+    -moz-box-shadow: -6px 1px 16px -3px rgba(0,0,0,0.5);/*FF 3.5+*/
+    -webkit-box-shadow: -6px 1px 16px -3px rgba(0,0,0,0.5);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: -6px 1px 16px -3px rgba(0,0,0,0.5);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=135, Color=#000000); /*IE 5.5-7*/
+    width: 80%;
+    margin: auto;
+}
+main #res_form>h2{
+    padding: 0.5em;
+    background: -moz-linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* FF3.6+ */
+background: -webkit-gradient(linear, 10deg, color-stop(58%, 498038), color-stop(100%, F6F6F6));/* Chrome,Safari4+ */
+background: -webkit-linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* Opera 11.10+ */
+background: -ms-linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); /* for IE */
+background: linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* W3C */
+    color: white;
+}
+main form {
+    width: 100%;
+    padding: 0.5em;
+}
+.f-g-3{
+    display: grid;
+    grid-template-columns: repeat(3,33.33%);
+}
+.f-g-1{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.f-g-3 input,.f-g-1 select {
+    padding: 0.5em;
+    margin: 0.15em;
+}
+
+
+form button {
+    margin-top: 10px;
+    padding: 0.5em;
+    background:  rgb(75, 158, 75);
+    color: white;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+#programs {
+    width: 80%;
+    margin: auto;
+    padding: 0px;
+    list-style-type: none;
+}
+.program {
+    margin-top: 1em;
+    background: -moz-linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* FF3.6+ */
+background: -webkit-gradient(linear, 10deg, color-stop(58%, 498038), color-stop(100%, F6F6F6));/* Chrome,Safari4+ */
+background: -webkit-linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* Opera 11.10+ */
+background: -ms-linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* IE10+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1301FE', endColorstr='#F4F60C', GradientType='1'); /* for IE */
+background: linear-gradient(10deg, #498038 58%, #F6F6F6 100%);/* W3C */
+padding: 1em;
+/* border-radius: 5px; */
+margin-bottom: 1em;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.program a{
+    color: white;
+    text-decoration: none;
+}
+.program span {
+    background:  rgb(75, 158, 75);
+    color: white;
+    font-size: small;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+@media screen and (max-height:600px){
+    main {
+        margin-top: -1em;
+    }
+    main #res_form {
+        width: 100%;
+    }
+    #programs {
+        margin-top: 1em;
+        width: 100%;
+    }
+}
